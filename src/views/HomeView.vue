@@ -19,6 +19,7 @@
                 </template>
             </ul>
         </div>
+        <SDK></SDK>
         <div class="flex flex-col gap-4">
             <Suspense>
                 <CityList />
@@ -36,6 +37,7 @@ import axios from "axios";
 import { useRouter } from "vue-router";
 import CityCardSkeleton from "../components/CityCardSkeleton.vue";
 import CityList from "../components/CityList.vue";
+import SDK from "../components/SDK.vue";
 
 const router = useRouter();
 const previewCity = (searchResult) => {
@@ -78,6 +80,4 @@ const getSearchResults = () => {
 };
 </script>
   
-<style lang="scss" scoped>
-
-</style>
+<style lang="scss" scoped></style>
